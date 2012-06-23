@@ -12,7 +12,7 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
+    
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,45 +28,116 @@
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
-
+  
+  <!-- Header
+    ================================================== -->
+    
+    <header class="page-header">
+      <div class="container">
+        <a href="index.html" class="pull-left main-logo">
+          <img src="assets/img/ygt-logo.png" alt="ygt-logo" width="276" height="70">
+        </a>
+        <h3 class="pull-left contact">0800 043 6644<br /><small><a class="head-email" href="#">info@yourgolftravel.com</a></small></h3>
+        <form class="navbar-search pull-right navbar-main-search">
+          <div class="input-append">
+            <input class="span4 main-search" type="text" placeholder="Search by venue, location or postcode...">
+            <button class="btn main-search-btn" type="button"> <i class="icon-search icon-white"></i> </button>
+          </div>
+        </form>
+      </div>
+    </header>
 
   <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
+             <ul class="nav">
               <li class="">
-                <a href="./index.html">Overview</a>
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="./scaffolding.html" class="dropdown-toggle " data-toggle="dropdown">UK Golf Breaks</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Golf Breaks England</a></li>
+                  <li><a href="#">Golf Breaks Scotland</a></li>
+                  <li><a href="#">Golf Breaks Wales</a></li>
+                  <li><a href="#">Golf Breaks Ireland</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="./base-css.html" class="dropdown-toggle " data-toggle="dropdown">Golf Holidays Abroad</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Golf Holidays Spain</a></li>
+                  <li><a href="#">Golf Holidays Portugal</a></li>
+                  <li><a href="#">Golf Holidays France</a></li>
+                  <li><a href="#">Golf Holidays Belgium</a></li>
+                  <li><a href="#">Golf Holidays America</a></li>
+                  <li><a href="#">Golf Holidays Dubai</a></li>
+                  <li><a href="#">Golf Holidays Turkey</a></li>
+                  <li><a href="#">Golf Holidays South Africa</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="./components.html" class="dropdown-toggle " data-toggle="dropdown">Golf Tours</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">English Golf Tours</a></li>
+                  <li><a href="#">Scottish Golf Tours</a></li>
+                  <li><a href="#">Welsh Golf Tours</a></li>
+                  <li><a href="#">Irish Golf Tours</a></li>
+                  <li><a href="#">French Golf Tours</a></li>
+                  <li><a href="#">Belgian Golf Tours</a></li>
+                  <li><a href="#">Spanish Golf Tours</a></li>
+                  <li><a href="#">Portuguese Golf Tours</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="./javascript.html" class="dropdown-toggle " data-toggle="dropdown">Speciality Breaks</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Free Beer</a></li>
+                  <li><a href="#">Stag Dos</a></li>
+                  <li><a href="#">Golf &amp; Spa Breaks</a></li>
+                  <li><a href="#">Golf Tuition &amp; Beginners Breaks</a></li>
+                  <li><a href="#">Golf &amp; Horse Racing Breaks</a></li>
+                  <li><a href="#">Pro Golf Packages</a></li>
+                  <li><a href="#">Singles Dating Breaks</a></li>
+                  <li><a href="#">Wine &amp; Golf Tours</a></li>
+                  <li><a href="#">More Speciality Breaks</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="./less.html" class="dropdown-toggle " data-toggle="dropdown">Corporate</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Corporate Golf Venues</a></li>
+                  <li><a href="#">Corporate Golf</a></li>
+                  <li><a href="#">Corporate Hospitality</a></li>
+                  <li><a href="#">Golf and Conference Venues</a></li>
+                  <li><a href="#">VIP Golf Concierge Service</a></li>
+                  <li><a href="#">Play with the Pros</a></li>
+                  <li><a href="#">More Corporate Golf</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="./downloading.html" class="dropdown-toggle " data-toggle="dropdown">Tournament Packages</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ryder Cup</a></li>
+                  <li><a href="#">US Masters</a></li>
+                  <li><a href="#">Open Championship</a></li>
+                  <li><a href="#">US Open</a></li>
+                  <li><a href="#">PGA Championship</a></li>
+                  <li><a href="#">The Players Championship</a></li>
+                  <li><a href="#">Golf Tournament Tickets</a></li>
+                  <li><a href="#">More Tournament Packages</a></li>
+                </ul>
               </li>
               <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
-              </li>
-              <li class="">
-                <a href="./base-css.html">Base CSS</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./javascript.html">Javascript plugins</a>
-              </li>
-              <li class="">
-                <a href="./less.html">Using LESS</a>
-              </li>
-              <li class="divider-vertical"></li>
-              <li class="">
-                <a href="./download.html">Customize</a>
-              </li>
-              <li class="">
-                <a href="./examples.html">Examples</a>
+                <a href="./examples.html" class="">Tee Times</a>
               </li>
             </ul>
           </div>
@@ -271,15 +342,112 @@
 </section>
 
 
-
-     <!-- Footer
-      ================================================== -->
+    </div>
+    
+     <!-- Footer 
+     ================================================== -->
       <footer class="footer">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      	<div class="container">
+      	  <div class="row-fluid">
+      	    <div class="span3">
+              <ul class="nav nav-list nav-list-footer">
+                <li class="nav-header">
+                  About Your Golf Travel
+                </li>
+                <li>
+                  <a href="./about-us.html" class="">About us</a>
+                </li>
+                <li>
+                  <a href="./whybook.html" class="">Why book with YGT?</a>
+                </li>
+                <li>
+                  <a href="./howwework.html" class="">How we work</a>
+                </li>
+                <li>
+                  <a href="./jobs.html" class="">Jobs</a>
+                </li>
+                <li>
+                  <a href="./privacy.html" class="">Privacy</a>
+                </li>
+                <li>
+                  <a href="./partners.html" class="">Partner services</a>
+                </li>
+                <li>
+                  <a href="./tandcs.html" class="">Terms and conditions</a>
+                </li>
+                <li>
+                  <a href="./accessibility.html" class=" bottom">Accessibility</a>
+                </li>
+              </ul>
+      	    </div>
+      	    <div class="span3">
+              <ul class="nav nav-list nav-list-footer">
+                <li class="nav-header">
+                  Your Golf Travel partners
+                </li>
+                <li>
+                  <a href="./spabreaks.html" class="">Spabreaks.com</a>
+                </li>
+                <li>
+                  <a href="./ukgolfguide.html" class="">UK Golf Guide</a>
+                </li>
+                <li>
+                  <a href="./fairwaytofurlong.html" class="">FairwaytoFurlong</a>
+                </li>
+                <li>
+                  <a href="./directgolf.html" class="">Direct Golf</a>
+                </li>
+                <li>
+                  <a href="./golfcare.html" class="">Golf Care</a>
+                </li>
+                <li>
+                  <a href="./golfersclub.html" class="">The Golfers Club</a>
+                </li>
+                <li>
+                  <a href="./urbangolf.html" class="">Urban Golf</a>
+                </li>
+                <li>
+                  <a href="./puregolf.html" class="">Pure Golf Events</a>
+                </li>
+                <li>
+                  <a href="./golfintmag.html" class="">Golf International Magazine</a>
+                </li>
+              </ul>
+      	    </div>
+      	    <div class="span3">
+              <ul class="nav nav-list nav-list-footer">
+                <li class="nav-header">
+                  Social Media
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-facebook"></i> Follow us on Facebook</i> </a>
+                </li>
+                <li>
+                  <a href="#" class="bottom"> <i class="icon-twitter"></i> Follow us on Twitter</a>
+                </li>
+              </ul>
+      	    </div>
+      	    <div class="span3 footer-last">
+              <ul class="nav nav-list nav-list-footer">
+                <li class="nav-header nav-header-last">
+                  Your Golf Travel is part of
+                </li>
+              </ul>
+              <img class="footer-logo" src="assets/img/logos/palatinate-footer.png" alt="palatinate-footer" width="220" height="26">
+              <address class="footer-address">
+                <strong>2004 - 2011 Your Golf Travel Ltd.</strong><br />
+                18-20 Farringdon Lane<br />
+                Second Floor, Clerks Court<br />
+                London EC1R 3AU<br />
+                All rights reserved<br />
+              </address>
+              <img class="footer-logo" src="assets/img/logos/cards.png" alt="cards" width="256" height="24">
+              <img class="footer-logo" src="assets/img/logos/atol-abta.png" alt="atol-abta" width="227" height="85">
+      	    </div>
+      	  </div>
+      	</div>
       </footer>
+
 
     </div><!-- /container -->
 

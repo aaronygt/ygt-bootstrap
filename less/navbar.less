@@ -19,9 +19,9 @@
   min-height: @navbarHeight;
   padding-left:  20px;
   padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  .border-radius(4px);
+  #gradient > .vertical(@navbarBackground, @navbarBackgroundHighlight);
   .box-shadow(~"0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1)");
+  border-bottom: 3px solid @green;
 }
 
 // Set width to auto for default container
@@ -51,10 +51,10 @@
     @elementHeight: 20px;
     padding: ((@navbarHeight - @elementHeight) / 2 - 2) 20px ((@navbarHeight - @elementHeight) / 2 + 2);
     margin-left: -20px; // negative indent to left-align the text down the page
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
     line-height: 1;
-    color: @navbarBrandColor;
+    color: @white;
   }
   // Plain text in topbar
   .navbar-text {
@@ -119,7 +119,7 @@
     #font > .sans-serif(13px, normal, 1);
     color: @white;
     background-color: @navbarSearchBackground;
-    border: 1px solid @navbarSearchBorder;
+    border: 2px solid @blueDark;
     .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
     .transition(none);
 
@@ -139,7 +139,13 @@
   }
 }
 
+.navbar-main-search {
+  margin-top:35px;
+}
 
+input.main-search {
+  border:2px solid @blueDark;
+}
 
 // FIXED NAVBAR
 // ------------
@@ -200,7 +206,7 @@
   float: none;
   // Vertically center the text given @navbarHeight
   @elementHeight: 20px;
-  padding: ((@navbarHeight - @elementHeight) / 2 - 1) 10px ((@navbarHeight - @elementHeight) / 2 + 1);
+  padding: ((@navbarHeight - @elementHeight) / 2 - 1) 30px ((@navbarHeight - @elementHeight) / 2 + 1);
   line-height: 19px;
   color: @navbarLinkColor;
   text-decoration: none;
@@ -257,8 +263,9 @@
 .navbar .btn-navbar {
   display: none;
   float: right;
-  padding: 7px 10px;
+  padding: 6px 10px;
   margin-left: 5px;
+  margin-top:1px;
   margin-right: 5px;
   .buttonBackground(@navbarBackgroundHighlight, @navbarBackground);
   .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
